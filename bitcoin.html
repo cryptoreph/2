@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биткоин (BTC) — Цифровое золото | CryptoHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon">₿</span>
+                <span>CRYPTO<span class="logo-light">HUB</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Рынок</a></li>
+                <li><a href="bitcoin.html" class="active">Биткоин</a></li>
+                <li><a href="altcoins.html">Альткоины</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Заголовок монеты -->
+            <div class="coin-header">
+                <div class="coin-header-main">
+                    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=035" alt="Bitcoin" class="coin-avatar">
+                    <div>
+                        <h1>Bitcoin <span class="badge">BTC</span></h1>
+                        <div class="price-large">$61,245 <span class="change-badge positive">+2.4%</span></div>
+                    </div>
+                </div>
+                <div class="coin-actions">
+                    <button class="btn-primary">Купить</button>
+                    <button class="btn-outline">Продать</button>
+                </div>
+            </div>
+
+            <!-- График (заглушка, но стильная) -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <span>График BTC/USD</span>
+                    <div class="chart-timeframes">
+                        <span class="active">1Д</span>
+                        <span>1Н</span>
+                        <span>1М</span>
+                        <span>1Г</span>
+                    </div>
+                </div>
+                <div class="custom-chart">
+                    <!-- SVG имитация свечного графика -->
+                    <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+                        <polyline fill="none" stroke="#3b82f6" stroke-width="2" points="0,180 50,160 100,140 150,120 200,150 250,100 300,80 350,60 400,70 450,40 500,50 550,30 600,20 650,45 700,30 750,50 800,40"/>
+                        <polygon fill="url(#gradient)" opacity="0.1" points="0,180 50,160 100,140 150,120 200,150 250,100 300,80 350,60 400,70 450,40 500,50 550,30 600,20 650,45 700,30 750,50 800,40 800,200 0,200"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Описание -->
+            <div class="content-grid">
+                <div class="info-card">
+                    <h2>Что такое Биткоин?</h2>
+                    <p>Биткоин — первая и самая известная криптовалюта, созданная в 2009 году Сатоши Накамото. Это децентрализованная цифровая валюта, работающая без центрального банка или единого администратора. Транзакции проверяются сетевыми узлами с помощью криптографии и записываются в публичный распределенный реестр, называемый блокчейн.</p>
+                </div>
+                <div class="stats-card">
+                    <h2>Ключевая статистика</h2>
+                    <ul class="stats-list">
+                        <li><span>Рыночная капитализация</span> <strong>$1.2 трлн</strong></li>
+                        <li><span>В обращении</span> <strong>19.64M BTC</strong></li>
+                        <li><span>Максимальная эмиссия</span> <strong>21M BTC</strong></li>
+                        <li><span>Хешрейт сети</span> <strong>550 EH/s</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 CryptoHub. Данные предоставлены с задержкой 15 минут. Не является инвестиционной рекомендацией.</p>
+        </div>
+    </footer>
+</body>
+</html>
